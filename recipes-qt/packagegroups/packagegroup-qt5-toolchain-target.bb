@@ -86,13 +86,6 @@ RDEPENDS:${PN} += " \
     qttools-tools \
     ${@bb.utils.contains('DISTRO_FEATURES', 'wayland', '${USE_WAYLAND}', '', d)} \
     ${@bb.utils.contains('DISTRO_FEATURES', 'x11', '${USE_X11}', '', d)} \
-    qtwebsockets-dev \
-    qtwebsockets-mkspecs \
-    ${@bb.utils.contains('DISTRO_FEATURES', 'opengl', 'qtwebsockets-qmlplugins', '', d)} \
-    qttranslations-qtwebsockets \
-    qtwebchannel-dev \
-    qtwebchannel-mkspecs \
-    ${@bb.utils.contains('DISTRO_FEATURES', 'opengl', 'qtwebchannel-qmlplugins', '', d)} \
     qtxmlpatterns-dev \
     qtxmlpatterns-mkspecs \
     qttranslations-qtxmlpatterns \
